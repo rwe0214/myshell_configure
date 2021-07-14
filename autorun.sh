@@ -11,6 +11,7 @@ source ~/.vimrc
 # install zsh, git
 echo "Installing zsh and git..."
 sudo apt-get install git
+sudo apt-get install zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # install powerlevel10k
