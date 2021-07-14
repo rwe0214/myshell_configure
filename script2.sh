@@ -25,6 +25,6 @@ echo "Downloading fonts..."
 cp fonts/*.ttf $FONTS_DIR
 
 # setting default shell
-echo "[ -f $HOME/bin/zsh ] && exec $HOME/bin/zsh -l" >> $HOME/.profile
+echo "[ -f $HOME/.local/bin/zsh ] && exec $HOME/.local/bin/zsh -l" >> $HOME/.profile
 source $HOME/.zshrc
 
