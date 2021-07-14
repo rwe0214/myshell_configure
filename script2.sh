@@ -12,8 +12,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # apply my zshrc setting
 echo "Applying my zshrc setting..."
-cp zshrc $HOME/.zshrc
-cp p10k.zsh $HOME/.p10k.zsh
+cp src/zshrc $HOME/.zshrc
+cp src/p10k.zsh $HOME/.p10k.zsh
 
 # apply fonts
 FONTS_DIR="$HOME/.local/share/fonts"

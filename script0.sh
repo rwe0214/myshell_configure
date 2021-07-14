@@ -1,5 +1,5 @@
 # install vim
-cp vimrc $HOME/.vimrc
+cp src/vimrc $HOME/.vimrc
 source $HOME/.vimrc
 
 # install zsh, git
