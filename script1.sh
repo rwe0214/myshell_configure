@@ -1,3 +1,3 @@
 # install oh-my-zsh
 echo "Installing oh-my-zsh"
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
