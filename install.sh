@@ -8,7 +8,7 @@ source $HOME/.vimrc
 # install zsh
 echo "Installing zsh and curses..."
 sudo apt-get install libncurses5-dev libncursesw5-dev
-wget -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
+wget --no-check-certificate -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
 mkdir zsh && unxz zsh.tar.xz && tar -xvf zsh.tar -C zsh --strip-components 1
 cd zsh
 ./configure --prefix=$HOME/.local
