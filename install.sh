@@ -1,7 +1,7 @@
 WORK_DIR=$(pwd)
 
 # install vim
-if [[ $1 = "-sudo" ]]; then    
+if [[ $1 = "--sudo" ]]; then    
     sudo apt-get install vim
 fi
 cp src/vimrc $HOME/.vimrc
@@ -9,7 +9,7 @@ source $HOME/.vimrc
 
 # install zsh
 echo "Installing zsh and curses..."
-if [[ $1 = "-sudo" ]]; then        
+if [[ $1 = "--sudo" ]]; then        
     sudo apt-get install libncurses5-dev libncursesw5-dev
 fi
 wget --no-check-certificate -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
