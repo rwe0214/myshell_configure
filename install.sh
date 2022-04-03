@@ -1,4 +1,5 @@
 WORK_DIR=$(pwd)
+BASE_PATH=$HOME
 
 # install vim
 if [[ $1 = "--sudo" ]]; then    
@@ -15,14 +16,14 @@ fi
 wget --no-check-certificate -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
 mkdir zsh && unxz zsh.tar.xz && tar -xvf zsh.tar -C zsh --strip-components 1
 cd zsh
-./configure --prefix=$HOME/.local
+./configure --prefix=$BASE_PATH
 make
 make install
 cd $WORK_DIR
 
 echo "Installing oh-my-zsh"
 # sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # install powerlevel10k
 echo "Installing powerlevel10k..."
