@@ -20,6 +20,13 @@ set expandtab
 filetype indent on
 hi LineNr cterm=bold ctermfg=DarkGrey ctermbg=NONE
 
+" keybinding
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+noremap <F11> :tabprevious<CR>
+noremap <F12> :tabnext<CR>
+
+" plugin config
 " vim-airline
 let g:airline_powerline_fonts = 1
 set noshowmode
