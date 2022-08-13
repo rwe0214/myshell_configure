@@ -1,12 +1,28 @@
-:set nu
-:set ai
-:set cursorline
-:set tabstop=4
-:set shiftwidth=4
-:set bg=dark
-:set mouse=a
-:set ruler
-:set backspace=2
-:set expandtab
+call plug#begin('~/.vim/bundle')
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+call plug#end()
+
+set nu
+set ai
+set cursorline
+set tabstop=4
+set shiftwidth=4
+set bg=dark
+set mouse=a
+set ruler
+set backspace=2
+set expandtab
 filetype indent on
-:hi LineNr cterm=bold ctermfg=DarkGrey ctermbg=NONE
+hi LineNr cterm=bold ctermfg=DarkGrey ctermbg=NONE
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+set noshowmode
+
+" nerdtree
+nnoremap <F5> :exec 'NERDTreeToggle' <CR>
